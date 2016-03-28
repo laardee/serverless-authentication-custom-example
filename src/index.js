@@ -14,7 +14,7 @@ export function signin({username, password}, options, callback) {
     };
     callback(null, mapProfile(response));
   } else {
-    callback(new Error('Unauthorized'));
+    callback(401);
   }
 }
 
